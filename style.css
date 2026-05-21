@@ -3,40 +3,49 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-image:ur1('begron.jpeg');
-    margin: 0;
-    padding 20;
-
+    background-image: url('begron.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
 }
+
+/* Container utama */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-h2 {
-    text-aligm: center;
-    margin-button: 20px;
-    background-color: #007bff;
-    color:white;
-    width:20%;
-}
-
+/* Judul */
 h1 {
-
     text-align: center;
-    margin-button: 20px;
+    margin-bottom: 20px;
     background-color: #007bff;
     color: white;
-    background: size 1ex 1px; ;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
 
+/* Produk */
 #product-list {
     margin-bottom: 30px;
 }
@@ -45,43 +54,50 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
+/* Card produk */
 .product {
     width: 200px;
     padding: 10px;
-    background-color:white;
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid #ddd;
     text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.product img{
+/* Gambar produk */
+.product img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
+/* Tombol */
 .product button {
     padding: 10px;
     background-color: #007bff;
     color: white;
-    barder: none;
+    border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
-
-.product-list{
-    background-color: #007bff
-}
-
+/* Hover tombol */
 .product button:hover {
-    background-color: #007bff
+    background-color: #0056b3;
 }
 
+/* Keranjang */
 #cart {
     margin-top: 30px;
 }
 
+/* List keranjang */
 #cart-items {
     list-style-type: none;
     padding: 0;
@@ -90,7 +106,5 @@ h1 {
 
 #cart-items li {
     padding: 5px 0;
-}
-body {
-    background-image: url('begron.jpeg');
+    border-bottom: 1px solid #ccc;
 }
